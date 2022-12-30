@@ -1,0 +1,115 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./style/var";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+.dummy_text {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.mainApp_wrapper {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  &.open {
+    .mainBox {
+      width: 380px;
+      max-height: 704px;
+      min-height: 80vh;
+    }
+  }
+}
+// .IframeWrapper {
+//   width: 380px;
+//   max-height: 704px;
+//   min-height: 80vh;
+//   border-radius: 20px;
+//   box-shadow: rgb(0 0 0 / 16%) 0px 5px 40px;
+//   overflow: hidden;
+//   iframe {
+//     min-height: inherit;
+//     width: 100%;
+//   }
+// }
+.mainBox {
+  border-radius: 20px;
+  box-shadow: 0px 5px 40px #00000029;
+  overflow: hidden;
+  background-image: linear-gradient(#e9ecff, #fff);
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  .mainBox_tabs {
+    max-height: 704px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column-reverse;
+    .mainBox_tabList {
+      border: none;
+      background-color: #fff;
+      box-shadow: 0px -5px 15px -3px #0000001a;
+      padding: 10px 1rem;
+      display: flex;
+      justify-content: space-around;
+      .nav-link {
+        border: none;
+        color: #818181;
+        svg {
+          font-size: 22px;
+        }
+        span {
+          display: block;
+          font-size: 14px;
+        }
+        &.active {
+          color: $secondaryColor;
+          background-color: transparent;
+        }
+      }
+    }
+    .tab-content {
+      flex-grow: 1;
+      position: relative;
+      .tab-pane {
+        min-height: 100%;
+      }
+    }
+  }
+  .tabContent_heading {
+    padding: 1rem 10px;
+    text-align: center;
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+}
+
+.mainApp_button {
+  margin-top: 1rem;
+  background-color: #e9ecff;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: 2rem;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e9ecff !important;
+  }
+}

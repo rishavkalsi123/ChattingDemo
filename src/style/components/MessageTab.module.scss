@@ -1,0 +1,22 @@
+@import "../var";
+.messageTab {
+  min-height: 100%;
+  .sendMessage_btn {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+    button {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #616161;
+      color: #fff;
+      &:hover {
+        background-color: rgba(#616161, 0.9);
+      }
+    }
+  }
+}
